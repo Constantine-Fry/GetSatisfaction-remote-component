@@ -311,7 +311,7 @@
 	OAConsumer *consumer = [[OAConsumer alloc] initWithKey:[[DCOAuthParams sharedParams] key] secret:[[DCOAuthParams sharedParams] secret]];
 	NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://api.getsatisfaction.com/companies/%@/topics", companyKey]];
 	OAToken *token = [[OAToken alloc] initWithUserDefaultsUsingServiceProviderName:@"GetSatisfaction" prefix:@"accessToken"];
-	OAPlaintextSignatureProvider *provider = [[OAPlaintextSignatureProvider alloc] init];
+	OAHMAC_SHA1SignatureProvider *provider = [[OAHMAC_SHA1SignatureProvider alloc] init];
 	OAMutableURLRequest *request = [[OAMutableURLRequest alloc] initWithURL:url
 		consumer:consumer
 		token:token

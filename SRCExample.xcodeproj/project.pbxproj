@@ -876,6 +876,7 @@
 				GCC_PREFIX_HEADER = SRCExample_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				PRODUCT_NAME = SRCExample;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -888,6 +889,7 @@
 				GCC_PREFIX_HEADER = SRCExample_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				PRODUCT_NAME = SRCExample;
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};

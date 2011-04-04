@@ -186,7 +186,7 @@
 		consumer:consumer
 		token:token
 		realm:nil
-		signatureProvider:[[[OAPlaintextSignatureProvider alloc] init] autorelease]];
+		signatureProvider:[[[OAHMAC_SHA1SignatureProvider alloc] init] autorelease]];
 	[request setValue:@"text/x-json" forHTTPHeaderField:@"Accept"];
 	[request setHTTPMethod:@"POST"];
 	[request setTimeoutInterval:15];
